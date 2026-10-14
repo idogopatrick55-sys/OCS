@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Découvrez les réalisations d'OCS : bâches climatisées, décoration événementielle, traiteur et sonorisation au Burkina Faso.">
+
+    <title>Nos réalisations | OCS - Osé Chimiste Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         EN-TÊTE ET NAVIGATION
+    ====================================== -->
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">OCS</span>
+
+                <span class="logo-text">
+                    <strong>OSÉ CHIMISTE SERVICE</strong>
+                    <small>Vos événements, notre expertise</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Nos services</a>
+                <a href="realisations.html" class="active">Nos réalisations</a>
+                <a href="index.html#apropos">À propos</a>
+                <a href="contact.html" class="nav-cta">Demander un devis</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================
+         BANNIÈRE PRINCIPALE
+    ====================================== -->
+
+    <section class="page-banner portfolio-banner">
+        <div class="container">
+
+            <p class="section-label">NOTRE SAVOIR-FAIRE EN IMAGES</p>
+
+            <h1>Nos réalisations</h1>
+
+            <p>
+                Chaque événement est unique. Découvrez en images
+                les prestations qui illustrent notre engagement
+                pour la qualité, le confort et l'élégance.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+                Organiser mon événement
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         INTRODUCTION
+    ====================================== -->
+
+    <section class="section portfolio-intro">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">L'EXPERTISE OCS</p>
+
+                <h2>Des prestations adaptées à vos événements</h2>
+
+                <p>
+                    Mariages, réceptions, cérémonies familiales
+                    ou événements professionnels : nous vous
+                    accompagnons pour donner vie à vos projets.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         GALERIE DES RÉALISATIONS
+    ====================================== -->
+
+    <section class="portfolio-section">
+        <div class="container">
+
+            <!-- FILTRES DE LA GALERIE -->
+
+            <div class="portfolio-filters" aria-label="Filtrer les réalisations">
+
+                <button class="portfolio-filter active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true">
+                    Tout voir
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-filter="baches"
+                        aria-pressed="false">
+                    Bâches climatisées
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-filter="decoration"
+                        aria-pressed="false">
+                    Décoration
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-filter="traiteur"
+                        aria-pressed="false">
+                    Traiteur
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-filter="sonorisation"
+                        aria-pressed="false">
+                    jus naturels
+                </button>
+
+            </div>
+
+
+            <!-- GRILLE DES PHOTOS -->
+
+            <div class="portfolio-grid">
+
+                <!-- RÉALISATION 1 -->
+
+                <article class="portfolio-card" data-category="baches">
+
+                    <div class="portfolio-image portfolio-baches-1">
+                        <span class="portfolio-category">
+                            Bâches climatisées
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>Espace de réception</h3>
+
+                        <p>
+                            Un espace conçu pour accueillir vos invités
+                            dans les meilleures conditions.
+                        </p>
+
+                        <a href="contact.html?service=baches">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- RÉALISATION 2 -->
+
+                <article class="portfolio-card" data-category="decoration">
+
+                    <div class="portfolio-image portfolio-decoration-1">
+                        <span class="portfolio-category">
+                            Décoration
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>Décoration de cérémonie</h3>
+
+                        <p>
+                            Une ambiance élégante pour rendre
+                            vos moments encore plus mémorables.
+                        </p>
+
+                        <a href="contact.html?service=decoration">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- RÉALISATION 3 -->
+
+                <article class="portfolio-card" data-category="traiteur">
+
+                    <div class="portfolio-image portfolio-traiteur-1">
+                        <span class="portfolio-category">
+                            Traiteur
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>Service de restauration</h3>
+
+                        <p>
+                            Une prestation de restauration adaptée
+                            au format de votre événement.
+                        </p>
+
+                        <a href="contact.html?service=traiteur">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- RÉALISATION 4 -->
+
+                <article class="portfolio-card" data-category="sonorisation">
+
+                    <div class="portfolio-image portfolio-sonorisation-1">
+                        <span class="portfolio-category">
+                            jus naturels
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>jus a base de fruits</h3>
+
+                        <p>
+                            Du jus naturels pour vos invités.
+                            
+                        </p>
+
+                        <a href="contact.html?service=sonorisation">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- RÉALISATION 5 -->
+
+                <article class="portfolio-card" data-category="baches">
+
+                    <div class="portfolio-image portfolio-baches-2">
+                        <span class="portfolio-category">
+                            Bâches climatisées
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>Installation événementielle</h3>
+
+                        <p>
+                            Une installation pensée selon l'espace
+                            disponible et les besoins des invités.
+                        </p>
+
+                        <a href="contact.html?service=baches">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- RÉALISATION 6 -->
+
+                <article class="portfolio-card" data-category="decoration">
+
+                    <div class="portfolio-image portfolio-decoration-2">
+                        <span class="portfolio-category">
+                            Décoration
+                        </span>
+                    </div>
+
+                    <div class="portfolio-card-content">
+                        <h3>Cadre festif</h3>
+
+                        <p>
+                            Une mise en scène décorative pour créer
+                            une atmosphère accueillante.
+                        </p>
+
+                        <a href="contact.html?service=decoration">
+                            Demander une prestation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- MESSAGE SI AUCUN RÉSULTAT -->
+
+            <p class="portfolio-empty" id="portfolio-empty" hidden>
+                Aucune réalisation ne correspond à cette catégorie.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         ZONE D'INTERVENTION
+    ====================================== -->
+
+    <section class="service-area">
+        <div class="container service-area-content">
+
+            <div>
+                <p class="section-label">DU PROJET À LA RÉALISATION</p>
+
+                <h2>Votre événement pourrait être notre prochaine réalisation</h2>
+
+                <p>
+                    OCS intervient à Ouagadougou, à Bobo-Dioulasso
+                    et dans les autres localités du Burkina Faso.
+                </p>
+
+                <p class="transport-notice">
+                    <strong>À noter :</strong> les frais de transport
+                    sont à la charge du client.
+                </p>
+            </div>
+
+            <a href="contact.html" class="btn btn-light">
+                Présenter mon projet
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         APPEL À L'ACTION
+    ====================================== -->
+
+    <section class="section">
+        <div class="container">
+
+            <div class="final-cta">
+
+                <p class="section-label">FAISONS ÉQUIPE</p>
+
+                <h2>Prêt à organiser votre événement ?</h2>
+
+                <p>
+                    Expliquez-nous votre projet et les prestations
+                    que vous recherchez. Nous pourrons étudier
+                    votre demande ensemble.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Demander un devis
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         PIED DE PAGE
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-mark">OCS</span>
+
+                    <span class="logo-text">
+                        <strong>OSÉ CHIMISTE SERVICE</strong>
+                        <small>Vos événements, notre expertise</small>
+                    </span>
+                </a>
+
+                <p>
+                    Des solutions événementielles adaptées
+                    à vos besoins au Burkina Faso.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Nos services</a>
+                <a href="realisations.html">Nos réalisations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Nos prestations</h3>
+                <a href="services.html#baches">Bâches climatisées</a>
+                <a href="services.html#traiteur">Traiteur</a>
+                <a href="services.html#decoration">Décoration</a>
+                <a href="services.html#sonorisation">Sonorisation</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    &copy; <span id="current-year">2026</span>
+                    OCS - Osé Chimiste Service.
+                    Tous droits réservés.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

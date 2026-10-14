@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contactez OCS - Osé Chimiste Service pour vos besoins en bâches climatisées, traiteur, décoration événementielle et sonorisation au Burkina Faso.">
+
+    <title>Contact et demande de devis | OCS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         EN-TÊTE ET NAVIGATION
+    ====================================== -->
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">OCS</span>
+
+                <span class="logo-text">
+                    <strong>OSÉ CHIMISTE SERVICE</strong>
+                    <small>Vos événements, notre expertise</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Nos services</a>
+                <a href="realisations.html">Nos réalisations</a>
+                <a href="index.html#apropos">À propos</a>
+                <a href="contact.html" class="nav-cta active">
+                    Demander un devis
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================
+         BANNIÈRE
+    ====================================== -->
+
+    <section class="page-banner contact-banner">
+
+        <div class="container">
+
+            <p class="section-label">PARLONS DE VOTRE PROJET</p>
+
+            <h1>Préparons ensemble votre événement</h1>
+
+            <p>
+                Décrivez-nous votre projet et les prestations
+                souhaitées. OCS pourra étudier votre demande
+                et échanger avec vous sur les possibilités.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FORMULAIRE DE CONTACT
+    ====================================== -->
+
+    <section class="section contact-section">
+
+        <div class="container contact-layout">
+
+            <!-- INFORMATIONS À GAUCHE -->
+
+            <aside class="contact-information">
+
+                <p class="section-label">CONTACT OCS</p>
+
+                <h2>Un projet à réaliser ?</h2>
+
+                <p>
+                    Que vous organisiez un mariage, une réception,
+                    une cérémonie familiale ou un événement professionnel,
+                    décrivez-nous vos besoins.
+                </p>
+
+                <div class="contact-info-card">
+
+                    <span class="contact-icon" aria-hidden="true">📍</span>
+
+                    <div>
+                        <h3>Zones d'intervention</h3>
+
+                        <p>
+                            Ouagadougou, Bobo-Dioulasso et les autres
+                            localités du Burkina Faso.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-info-card">
+
+                    <span class="contact-icon" aria-hidden="true">🎪</span>
+
+                    <div>
+                        <h3>Nos prestations</h3>
+
+                        <p>
+                            Bâches climatisées, traiteur,
+                            décoration et sonorisation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-info-card">
+
+                    <span class="contact-icon" aria-hidden="true">📝</span>
+
+                    <div>
+                        <h3>Demande personnalisée</h3>
+
+                        <p>
+                            Sélectionnez plusieurs prestations
+                            dans un même formulaire.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-warning">
+                    <strong>Information importante</strong>
+
+                    <p>
+                        Les frais de transport pour les prestations
+                        réalisées hors de la zone habituelle
+                        d'intervention sont à la charge du client.
+                    </p>
+                </div>
+
+            </aside>
+
+
+            <!-- FORMULAIRE À DROITE -->
+
+            <div class="contact-form-container">
+
+                <div class="contact-form-heading">
+
+                    <p class="section-label">VOTRE DEMANDE</p>
+
+                    <h2>Demander un devis</h2>
+
+                    <p>
+                        Les champs marqués d'un astérisque (*)
+                        sont obligatoires.
+                    </p>
+
+                </div>
+
+
+                <form id="contact-form">
+
+                    <!-- COORDONNÉES -->
+
+                    <fieldset class="form-fieldset">
+
+                        <legend>1. Vos coordonnées</legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="nom">
+                                    Nom complet *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nom"
+                                    name="nom"
+                                    placeholder="Ex. : Amadou Ouédraogo"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telephone">
+                                    Numéro de téléphone *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telephone"
+                                    name="telephone"
+                                    placeholder="Ex. : 70 00 00 00"
+                                    autocomplete="tel"
+                                    required>
+                            </div>
+
+                            <div class="form-group form-full">
+                                <label for="email">
+                                    Adresse e-mail (facultatif)
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Ex. : nom@exemple.com"
+                                    autocomplete="email">
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- INFORMATIONS SUR L'ÉVÉNEMENT -->
+
+                    <fieldset class="form-fieldset">
+
+                        <legend>2. Votre événement</legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="type-evenement">
+                                    Type d'événement *
+                                </label>
+
+                                <select
+                                    id="type-evenement"
+                                    name="type-evenement"
+                                    required>
+
+                                    <option value="">
+                                        Sélectionnez un type
+                                    </option>
+
+                                    <option value="Mariage">
+                                        Mariage
+                                    </option>
+
+                                    <option value="Fiançailles">
+                                        Fiançailles
+                                    </option>
+
+                                    <option value="Anniversaire">
+                                        Anniversaire
+                                    </option>
+
+                                    <option value="Baptême">
+                                        Baptême
+                                    </option>
+
+                                    <option value="Cérémonie familiale">
+                                        Cérémonie familiale
+                                    </option>
+
+                                    <option value="Événement professionnel">
+                                        Événement professionnel
+                                    </option>
+
+                                    <option value="Cérémonie officielle">
+                                        Cérémonie officielle
+                                    </option>
+
+                                    <option value="Autre">
+                                        Autre
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="date-evenement">
+                                    Date prévue *
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date-evenement"
+                                    name="date-evenement"
+                                    required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="ville">
+                                    Ville *
+                                </label>
+
+                                <select
+                                    id="ville"
+                                    name="ville"
+                                    required>
+
+                                    <option value="">
+                                        Sélectionnez une ville
+                                    </option>
+
+                                    <option value="Ouagadougou">
+                                        Ouagadougou
+                                    </option>
+
+                                    <option value="Bobo-Dioulasso">
+                                        Bobo-Dioulasso
+                                    </option>
+
+                                    <option value="Koudougou">
+                                        Koudougou
+                                    </option>
+
+                                    <option value="Banfora">
+                                        Banfora
+                                    </option>
+
+                                    <option value="Ouahigouya">
+                                        Ouahigouya
+                                    </option>
+
+                                    <option value="Autre localité">
+                                        Autre localité
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="lieu">
+                                    Quartier ou lieu précis *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="lieu"
+                                    name="lieu"
+                                    placeholder="Ex. : quartier, salle..."
+                                    required>
+                            </div>
+
+
+                            <div class="form-group form-full">
+                                <label for="invites">
+                                    Nombre approximatif d'invités
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="invites"
+                                    name="invites"
+                                    min="1"
+                                    step="1"
+                                    placeholder="Ex. : 200">
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- CHOIX DES SERVICES -->
+
+                    <fieldset class="form-fieldset">
+
+                        <legend>3. Les services souhaités</legend>
+
+                        <p class="form-help">
+                            Cochez toutes les prestations dont vous avez besoin.
+                        </p>
+
+                        <div class="service-checkboxes">
+
+                            <label class="service-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    name="services"
+                                    value="Location de bâches climatisées">
+
+                                <span class="checkbox-content">
+                                    <strong>Bâches climatisées</strong>
+                                    <small>Location et espace de réception</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="service-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    name="services"
+                                    value="Service traiteur">
+
+                                <span class="checkbox-content">
+                                    <strong>Service traiteur</strong>
+                                    <small>Restauration de vos invités</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="service-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    name="services"
+                                    value="Décoration événementielle">
+
+                                <span class="checkbox-content">
+                                    <strong>Décoration</strong>
+                                    <small>Mise en scène de votre cérémonie</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="service-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    name="services"
+                                    value="Sonorisation">
+
+                                <span class="checkbox-content">
+                                    <strong>jus naturels</strong>
+                                    <small>jus a base de fruits</small>
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                        <p class="form-error" id="service-error" hidden>
+                            Veuillez sélectionner au moins un service.
+                        </p>
+
+                    </fieldset>
+
+
+                    <!-- BUDGET ET PRÉCISIONS -->
+
+                    <fieldset class="form-fieldset">
+
+                        <legend>4. Votre budget et vos précisions</legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group form-full">
+
+                                <label for="budget">
+                                    Budget envisagé (facultatif)
+                                </label>
+
+                                <select id="budget" name="budget">
+
+                                    <option value="">
+                                        Je préfère en discuter
+                                    </option>
+
+                                    <option value="Moins de 100 000 FCFA">
+                                        Moins de 100 000 FCFA
+                                    </option>
+
+                                    <option value="100 000 à 250 000 FCFA">
+                                        100 000 à 250 000 FCFA
+                                    </option>
+
+                                    <option value="250 000 à 500 000 FCFA">
+                                        250 000 à 500 000 FCFA
+                                    </option>
+
+                                    <option value="500 000 à 1 000 000 FCFA">
+                                        500 000 à 1 000 000 FCFA
+                                    </option>
+
+                                    <option value="Plus de 1 000 000 FCFA">
+                                        Plus de 1 000 000 FCFA
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group form-full">
+
+                                <label for="details">
+                                    Décrivez votre projet
+                                </label>
+
+                                <textarea
+                                    id="details"
+                                    name="details"
+                                    rows="5"
+                                    placeholder="Précisez vos besoins, vos préférences et toute autre information utile..."></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- RÉCAPITULATIF -->
+
+                    <div class="request-summary" id="request-summary">
+
+                        <h3>Récapitulatif de votre demande</h3>
+
+                        <p>
+                            Après avoir rempli le formulaire,
+                            vous pourrez vérifier les informations
+                            avant de les transmettre.
+                        </p>
+
+                        <p id="selected-services-summary">
+                            Aucun service sélectionné pour le moment.
+                        </p>
+
+                    </div>
+
+
+                    <!-- VALIDATION -->
+
+                    <div class="form-consent">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="confirmation"
+                                name="confirmation"
+                                required>
+
+                            <span>
+                                Je confirme que les informations
+                                fournies sont exactes et j'accepte
+                                qu'OCS les utilise pour répondre
+                                à ma demande.
+                            </span>
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary contact-submit">
+
+                        Préparer ma demande sur WhatsApp
+
+                    </button>
+
+                    <p class="form-privacy">
+                        Le formulaire préparera un message WhatsApp.
+                        Vous pourrez le vérifier avant de l'envoyer.
+                    </p>
+
+                    <p
+                        id="contact-form-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PIED DE PAGE
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-mark">OCS</span>
+
+                    <span class="logo-text">
+                        <strong>OSÉ CHIMISTE SERVICE</strong>
+                        <small>Vos événements, notre expertise</small>
+                    </span>
+                </a>
+
+                <p>
+                    Des solutions événementielles adaptées
+                    à vos besoins au Burkina Faso.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Nos services</a>
+                <a href="realisations.html">Nos réalisations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Nos prestations</h3>
+                <a href="services.html#baches">Bâches climatisées</a>
+                <a href="services.html#traiteur">Traiteur</a>
+                <a href="services.html#decoration">Décoration</a>
+                <a href="services.html#sonorisation">jus naturels</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p>
+                    &copy; <span id="current-year">2026</span>
+                    OCS - Osé Chimiste Service.
+                    Tous droits réservés.
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
