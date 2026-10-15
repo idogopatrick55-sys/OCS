@@ -1997,7 +1997,7 @@ text-align: right;
 /* Nouveau logo officiel OCS */
 .logo-image {
     display: block;
-    width: 80px;
+    width: 50px;
     height: auto;
     max-width: 100%;
     object-fit: contain;
