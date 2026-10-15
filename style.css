@@ -1994,3 +1994,25 @@ text-align: right;
         transition: none;
     }
 }
+/* Nouveau logo officiel OCS */
+.logo-image {
+    display: block;
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.footer-logo .logo-image {
+    width: 200px;
+}
+
+@media (max-width: 760px) {
+    .logo-image {
+        width: 145px;
+    }
+
+    .footer-logo .logo-image {
+        width: 165px;
+    }
+}

@@ -107,11 +107,12 @@ if (contactForm) {
     const serviceFromURL = serviceParameters.get("service");
 
     const serviceMapping = {
-        baches: "Location de bâches climatisées",
-        traiteur: "Service traiteur",
-        decoration: "Décoration événementielle",
-        sonorisation: "Sonorisation"
-    };
+    baches: "Location de bâches climatisées",
+    traiteur: "Service traiteur",
+    decoration: "Décoration événementielle",
+    jus: "Jus naturels",
+};
+
 
     if (serviceFromURL && serviceMapping[serviceFromURL]) {
         serviceCheckboxes.forEach(function (checkbox) {
