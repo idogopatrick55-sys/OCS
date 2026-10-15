@@ -823,7 +823,9 @@ text-align: right;
 }
 
 .navbar {
-    min-height: 76px;
+    min-height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .logo-icon {
@@ -1997,9 +1999,9 @@ text-align: right;
 /* Nouveau logo officiel OCS */
 .logo-image {
     display: block;
-    width:35px;
+    width: 70px;
     height: auto;
-    max-width: 35%;
+    max-width: 70%;
     object-fit: contain;
 }
 
