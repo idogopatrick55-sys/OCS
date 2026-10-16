@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Location de bâches climatisées | OCS</title>
+
+    <meta name="description"
+          content="OCS propose la location de bâches climatisées pour vos cérémonies à Ouagadougou, Bobo-Dioulasso et partout au Burkina Faso.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Présentation de la page */
+        .baches-hero {
+            background: linear-gradient(135deg, #0f2a43, #1c5278);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .baches-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 20px;
+        }
+
+        .baches-hero p {
+            max-width: 750px;
+            margin: 0 auto 28px;
+            line-height: 1.8;
+        }
+
+        .baches-section {
+            padding: 60px 0;
+        }
+
+        .baches-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .baches-intro h2,
+        .conditions h2,
+        .devis-section h2 {
+            color: #0f2a43;
+            margin-bottom: 18px;
+        }
+
+        .baches-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .bache-card {
+            background: white;
+            border-radius: 14px;
+            padding: 30px 24px;
+            box-shadow: 0 5px 22px rgba(15, 42, 67, 0.09);
+            border: 1px solid #e8edf2;
+            text-align: center;
+            transition: transform 0.25s ease;
+        }
+
+        .bache-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bache-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .bache-card h3 {
+            color: #0f2a43;
+            margin-bottom: 12px;
+        }
+
+        .bache-card p {
+            color: #596575;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .bache-button {
+            display: inline-block;
+            background: #0f2a43;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        .bache-button:hover {
+            background: #1c5278;
+        }
+
+        .conditions {
+            background: #f3f7fa;
+            padding: 55px 25px;
+            border-radius: 14px;
+            margin-top: 55px;
+        }
+
+        .conditions ul {
+            padding-left: 25px;
+            line-height: 2.2;
+        }
+
+        .devis-section {
+            padding: 60px 0;
+        }
+
+        .devis-intro {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .devis-form {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 22px rgba(15, 42, 67, 0.09);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #0f2a43;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d5dde5;
+            border-radius: 7px;
+            font: inherit;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .devis-submit {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 7px;
+            background: #168447;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .devis-submit:hover {
+            background: #116b38;
+        }
+
+        .baches-note {
+            margin-top: 20px;
+            color: #596575;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 850px) {
+            .baches-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 550px) {
+            .baches-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .baches-hero {
+                padding: 50px 18px;
+            }
+
+            .devis-form {
+                padding: 22px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- En-tête et navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo">
+                    <img
+                        src="logo-ocs.png"
+                        alt="OCS - Osé Chimiste Service"
+                        class="logo-image"
+                    >
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                    aria-controls="navigation"
+                    type="button"
+                >
+                    ☰
+                </button>
+
+                <div class="navigation" id="navigation">
+                    <a href="index.html">Accueil</a>
+                    <a href="services.html">Services</a>
+                    <a href="baches-climatisees.html">Bâches climatisées</a>
+                    <a href="realisations.html">Réalisations</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Présentation -->
+        <section class="baches-hero">
+            <h1>Location de bâches climatisées</h1>
+
+            <p>
+                Offrez à vos invités un cadre confortable pour vos mariages,
+                cérémonies, réceptions et événements professionnels.
+                OCS vous accompagne dans l'organisation de vos événements
+                à Ouagadougou, Bobo-Dioulasso et partout au Burkina Faso.
+            </p>
+
+            <a href="#demande-devis" class="bache-button">
+                Demander un devis
+            </a>
+        </section>
+
+        <!-- Capacités disponibles -->
+        <section class="baches-section">
+            <div class="container">
+
+                <div class="baches-intro">
+                    <h2>Choisissez la capacité adaptée à votre événement</h2>
+
+                    <p>
+                        Nous vous invitons à nous contacter pour choisir
+                        la bâche climatisée correspondant au nombre de vos invités
+                        et aux besoins de votre cérémonie.
+                    </p>
+                </div>
+
+                <div class="baches-grid">
+
+                    <article class="bache-card">
+                        <div class="bache-icon">🎪</div>
+                        <h3>Bâche de 100 places</h3>
+
+                        <p>
+                            Une solution pour vos cérémonies et réceptions
+                            réunissant environ 100 personnes.
+                        </p>
+
+                        <a href="#demande-devis"
+                           class="bache-button"
+                           data-capacite="100 places">
+                            Demander un devis
+                        </a>
+                    </article>
+
+                    <article class="bache-card">
+                        <div class="bache-icon">🎪</div>
+                        <h3>Bâche de 200 places</h3>
+
+                        <p>
+                            Pour les événements accueillant environ
+                            200 personnes.
+                        </p>
+
+                        <a href="#demande-devis"
+                           class="bache-button"
+                           data-capacite="200 places">
+                            Demander un devis
+                        </a>
+                    </article>
+
+                    <article class="bache-card">
+                        <div class="bache-icon">🎪</div>
+                        <h3>Bâche de 300 places</h3>
+
+                        <p>
+                            Une capacité à envisager pour vos cérémonies
+                            de plus grande envergure.
+                        </p>
+
+                        <a href="#demande-devis"
+                           class="bache-button"
+                           data-capacite="300 places">
+                            Demander un devis
+                        </a>
+                    </article>
+
+                    <article class="bache-card">
+                        <div class="bache-icon">🎪</div>
+                        <h3>Bâche de 400 places</h3>
+
+                        <p>
+                            Pour les grands rassemblements et les événements
+                            réunissant environ 400 personnes.
+                        </p>
+
+                        <a href="#demande-devis"
+                           class="bache-button"
+                           data-capacite="400 places">
+                            Demander un devis
+                        </a>
+                    </article>
+
+                    <article class="bache-card">
+                        <div class="bache-icon">🎪</div>
+                        <h3>Autres capacités</h3>
+
+                        <p>
+                            Vous avez besoin d'une capacité différente ?
+                            Contactez OCS pour étudier votre demande.
+                        </p>
+
+                        <a href="#demande-devis"
+                           class="bache-button"
+                           data-capacite="Autre capacité">
+                            Faire une demande
+                        </a>
+                    </article>
+
+                </div>
+
+                <!-- Conditions -->
+                <div class="conditions">
+                    <h2>Conditions de location</h2>
+
+                    <ul>
+                        <li>
+                            La durée standard de location est de 24 heures.
+                        </li>
+
+                        <li>
+                            Une prolongation peut être envisagée moyennant
+                            des frais supplémentaires.
+                        </li>
+
+                        <li>
+                            Le tarif dépend de la capacité demandée et des
+                            conditions de votre événement.
+                        </li>
+
+                        <li>
+                            Les tarifs sont communiqués sur demande.
+                        </li>
+
+                        <li>
+                            Pour une prestation hors de Ouagadougou ou
+                            Bobo-Dioulasso, les frais de transport du prestataire
+                            sont à la charge du client.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Formulaire de devis -->
+        <section class="devis-section" id="demande-devis">
+            <div class="container">
+
+                <div class="baches-intro">
+                    <h2>Demandez votre devis personnalisé</h2>
+
+                    <p class="devis-intro">
+                        Remplissez les informations ci-dessous.
+                        Votre demande sera préparée dans WhatsApp afin que
+                        vous puissiez l'envoyer directement à OCS.
+                    </p>
+                </div>
+
+                <form class="devis-form" id="bache-devis-form">
+
+                    <div class="form-group">
+                        <label for="client-nom">Nom complet *</label>
+                        <input
+                            type="text"
+                            id="client-nom"
+                            name="nom"
+                            required
+                            placeholder="Votre nom"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-telephone">Téléphone *</label>
+                        <input
+                            type="tel"
+                            id="client-telephone"
+                            name="telephone"
+                            required
+                            placeholder="Votre numéro de téléphone"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="capacite">Capacité souhaitée *</label>
+
+                        <select id="capacite" name="capacite" required>
+                            <option value="">Choisir une capacité</option>
+                            <option value="100 places">100 places</option>
+                            <option value="200 places">200 places</option>
+                            <option value="300 places">300 places</option>
+                            <option value="400 places">400 places</option>
+                            <option value="Autre capacité">Autre capacité</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date-evenement">Date de l'événement *</label>
+                        <input
+                            type="date"
+                            id="date-evenement"
+                            name="date"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ville-evenement">Ville de l'événement *</label>
+                        <input
+                            type="text"
+                            id="ville-evenement"
+                            name="ville"
+                            required
+                            placeholder="Ex. : Bobo-Dioulasso"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duree-location">Durée souhaitée</label>
+
+                        <select id="duree-location" name="duree">
+                            <option value="24 heures">24 heures</option>
+                            <option value="48 heures">48 heures</option>
+                            <option value="3 jours">3 jours</option>
+                            <option value="Plus de 3 jours">
+                                Plus de 3 jours
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details-evenement">
+                            Informations complémentaires
+                        </label>
+
+                        <textarea
+                            id="details-evenement"
+                            name="details"
+                            placeholder="Précisez le type de cérémonie ou vos besoins particuliers."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="devis-submit">
+                        Envoyer ma demande sur WhatsApp
+                    </button>
+
+                    <p class="baches-note">
+                        L'envoi de la demande ne confirme pas la réservation.
+                        OCS vous contactera pour discuter des détails.
+                    </p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; <span id="annee-actuelle"></span>
+                OCS — Osé Chimiste Service.
+                Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Numéro WhatsApp d'OCS
+        const OCS_WHATSAPP = "22655198680";
+
+        // Préremplir la capacité lorsque le client clique sur une carte
+        document.querySelectorAll("[data-capacite]").forEach(function(bouton) {
+            bouton.addEventListener("click", function() {
+                const capacite = bouton.getAttribute("data-capacite");
+                document.getElementById("capacite").value = capacite;
+            });
+        });
+
+        // Préparer la demande de devis dans WhatsApp
+        document.getElementById("bache-devis-form")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const nom = document.getElementById("client-nom").value.trim();
+                const telephone = document.getElementById("client-telephone").value.trim();
+                const capacite = document.getElementById("capacite").value;
+                const date = document.getElementById("date-evenement").value;
+                const ville = document.getElementById("ville-evenement").value.trim();
+                const duree = document.getElementById("duree-location").value;
+                const details = document.getElementById("details-evenement").value.trim();
+
+                const message =
+                    "Bonjour OCS, je souhaite demander un devis pour une bâche climatisée.\n\n" +
+                    "Nom : " + nom + "\n" +
+                    "Téléphone : " + telephone + "\n" +
+                    "Capacité souhaitée : " + capacite + "\n" +
+                    "Date de l'événement : " + date + "\n" +
+                    "Ville : " + ville + "\n" +
+                    "Durée souhaitée : " + duree + "\n" +
+                    "Informations complémentaires : " +
+                    (details || "Aucune") + "\n\n" +
+                    "Merci de me communiquer votre tarif et vos conditions de location.";
+
+                const whatsappURL =
+                    "https://wa.me/" + OCS_WHATSAPP +
+                    "?text=" + encodeURIComponent(message);
+
+                const nouvelleFenetre = window.open(whatsappURL, "_blank");
+
+                if (!nouvelleFenetre) {
+                    window.location.href = whatsappURL;
+                }
+            });
+
+        // Afficher l'année actuelle
+        document.getElementById("annee-actuelle").textContent =
+            new Date().getFullYear();
+
+        // Menu mobile
+        const menuToggle = document.getElementById("menu-toggle");
+        const navigation = document.getElementById("navigation");
+
+        if (menuToggle && navigation) {
+            menuToggle.addEventListener("click", function() {
+                const ouvert = navigation.classList.toggle("active");
+                menuToggle.setAttribute("aria-expanded", ouvert ? "true" : "false");
+            });
+        }
+    </script>
+
+</body>
+</html>
