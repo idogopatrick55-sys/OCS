@@ -92,7 +92,7 @@ if (portfolioFilters.length > 0 && portfolioCards.length > 0) {
    Envoi des demandes via WhatsApp
 ========================================== */
 
-const OCS_WHATSAPP = "22655198680";
+const OCS_WHATSAPP = "22678868683";
 
 const contactForm = document.getElementById("contact-form");
 const serviceError = document.getElementById("service-error");
